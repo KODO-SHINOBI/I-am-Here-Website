@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Breathe</title>
+  <link rel="stylesheet" href="breathe.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand brand" href="#">I'm Here</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cure.html">Cure</a>
+            <li class="nav-item">
+              <a class="nav-link" href="breathe.html">Breathing</a>
+              <li class="nav-item">
+                <a class="nav-link" href="nothing.html">Unburden</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<h1>
+    Breathe simultaneous with it 
+</h1>
+<div class="container-fluid breath" id="breathe">
+        <span class="inhale" id="in">
+            Inhale
+        </span>
+        <span class="exhale" id="ex">
+            Exhale
+        </span>
+        <span class="hold" id="stop">
+            Hold
+        </span>
+</div>
+<button class="btn btn-primary" onclick="myPlayFunction()">Play</button>
+<button class="btn btn-danger" onclick="myPauseFunction()">Pause</button>
+
+<div class="container steps">
+  <h1>Read the Instructions</h1>
+    <p>Step 1: Breathe in counting to four slowly while the circle is expanding. Feel the air enter your lungs.</p>
+    <p>Step 2: Hold your breath for 4 seconds. Try to avoid inhaling or exhaling for 4 seconds.</p>
+    <p>Step 3: Slowly exhale through your mouth for 4 seconds while the circle is shrinking.</p>
+    <p>Step 4: Repeat steps 1 to 3 until you feel re-centered.</p>
+    <br><br>
+    <p>Box breathing is a powerful, yet simple, relaxation technique that aims to return breathing to its normal rhythm. This breathing exercise may help to clear the mind, relax the body, and improve focus.</p>
+    <p>The technique is also known as “resetting your breath” or four-square breathing. It is easy to do, quick to learn, and can be a highly effective technique for people in stressful situations.People with high-stress jobs, such as soldiers and police officers, often use box breathing when their bodies are in fight-or-flight mode. This technique is also relevant for anyone interested in re-centering themselves or improving their concentration.</p>
+    <br>
+    <h1>Benefits of Box Breathing</h1>
+    <p>- It can help you cope with panic and stress when feeling overwhelmed. Counting helps to take the focus from the panic-producing situation enabling you to handle and control your response.</p>
+    <p>- Helps you to sleep when you are having insomnia.</p>
+    <p>- Helps to control hyperventilation as you can instruct your lungs to breathe rhythmically.</p>
+    <p>- Helps you refocus when you are having a busy or stressful day.</p>
+    <p>- Lowers blood pressure and decreases Cortisol(a stress hormone) which can improve your mood.</p>
+    <p>- When making a big decision.</p>
+    <p>- Eases panic and worry.</p>
+</div>
+<script src="breathe.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

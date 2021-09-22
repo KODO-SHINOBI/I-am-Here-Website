@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Breathe</title>
+  <link rel="stylesheet" href="nothing.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand brand" href="#">I'm Here</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <i class="fas fa-bars"></i>
+      </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cure.html">Cure</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="breathe.html">Breathing</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nothing.html">Unburden</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div id="primaryContent" class="group">  
+      <h1>Take a Break</h1>
+    	<p>Just put the time in minutes</p>
+	    <div id="inputArea">
+        <input type="text" id="minutes">
+        <input type="button" id="start" value="Start">
+      </div>        
+    </div>
+
+    <div class="tired" id="Ti"><h2 id="time">0:00</h2>tired</div>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+       <filter id="filter">
+          <feTurbulence type="turbulence" baseFrequency="0" id="turbulence" numOctaves="1" result="turbulence" seed="5">
+            <animate id="noiseAnimate" attributeName="baseFrequency" values="0.02; 0.04; 0.02" calcMode="spline" keySplines="0.42 0.0 0.58 1.0;0.42 0.0 0.58 1.0" dur="15s" repeatCount="indefinite"></animate>
+       </feTurbulence>
+       <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="10" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+       </filter>
+    </svg>
+    
+    <section class="cont" id="last">
+      <h3 class="title">
+        <span>Hi, there.</span>
+        <span>are you</span>
+        <span>relaxed now ?</span>
+      </h3>
+      
+      <h4 class="title">
+        <span>Do you</span>
+        <span>feel like</span>
+        <span>you are calm</span> 
+        <span>and stress-free ?</span>
+      </h4>
+
+      <h5 class="title">
+        <span>Take a break</span>
+        <span>whenever</span>
+        <span>you feel stressful.</span> 
+      </h5>
+
+      <h6 class="title">
+        <span>Bye.</span>
+        <span>Do you need</span>
+        <span><a style="text-decoration: none; color:yellow;" href="nothing.html">another break ?</a></span> 
+      </h6>
+    </section>
+
+      <script src="nothing.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
